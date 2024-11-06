@@ -1,4 +1,6 @@
-var arr = [1,2,3,4,5];
-arr.map(element => {
-    console.log(element);
-});
+const arr = [1,2,3,4,5];
+let i = 0;
+while ( i < arr.length){
+    console.log(arr[i]);
+    i++;
+}
