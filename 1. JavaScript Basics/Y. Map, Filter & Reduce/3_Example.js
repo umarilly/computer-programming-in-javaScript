@@ -1,7 +1,17 @@
-const numbers = [1, 2, 3, 4, 5];
+// Using traditional for loop
+const numbersForLoop = [1, 2, 3, 4, 5];
+let sumUsingForLoop = 0;
 
-const sum = numbers.reduce((accumulator, currentValue) => {
+for (let index = 0; index < numbersForLoop.length; index++) {
+    sumUsingForLoop += numbersForLoop[index];
+}
+
+console.log('Sum using for loop : ', sumUsingForLoop);
+
+// Using reduce method
+const numbersForReduce = [1, 2, 3, 4, 5];
+const sumUsingReduce = numbersForReduce.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0);
 
-console.log(sum);
+console.log('Sum using reduce : ', sumUsingReduce);
