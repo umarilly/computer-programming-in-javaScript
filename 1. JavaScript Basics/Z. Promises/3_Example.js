@@ -7,6 +7,13 @@
  * 2. processPayment
  * 3. shipOrder
  *
+ * Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+ *
+ * Promise is a constructor function that takes a function as an argument.
+ * The function takes two parameters: resolve and reject.
+ * Resolve is a function that is called when the promise is fulfilled.
+ * Reject is a function that is called when the promise is rejected.
+ *
  */
 
 const order = {
