@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Use of Script Tag in HTML File</title>
+  </head>
+  <body>
+    <h1>Use of Script Tag in HTML File</h1>
+    <script>
+      document.write("Hello World");
+      /**
+       * The <script> tag allows JavaScript code to be embedded directly in the HTML file.
+       * The code inside this tag runs when the page loads.
+       * Here, document.write() outputs "Hello World" directly to the web page.
+       */
+    </script>
+
+    <!-- 
+      <script src="script.js"></script>
+      The <script> tag with the 'src' attribute links an external JavaScript file (script.js) to the HTML file.
+      The code in script.js will execute when the page loads.
+      This approach helps keep HTML and JavaScript code separate for better organization and maintainability.
+    -->
+
+    <!-- 
+      <script type="module" src="script.js"></script>
+      The <script> tag with type="module" is used to load JavaScript modules.
+      It allows the use of import/export statements in the external JavaScript file.
+      By default, module scripts are deferred and loaded asynchronously, improving page load times.
+    -->
+      
+  </body>
+</html>
