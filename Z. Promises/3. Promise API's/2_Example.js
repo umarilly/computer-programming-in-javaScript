@@ -1,6 +1,11 @@
 
 /**
  * Promise.allSettled
+ * 
+ * Promise.allSettled is used to run multiple promises in parallel and return an array of results.
+ * It will return an array of objects with the status and value of each promise.
+ * It will not throw an error if one of the promises is rejected.
+ * It will wait for all promises to settle (resolve or reject) before returning the results.
  */
 
 const promise1 = new Promise((resolve, reject) => {
